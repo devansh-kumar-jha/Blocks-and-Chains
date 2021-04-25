@@ -126,7 +126,7 @@ const prompt = ps();
 
 let tar='0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF';
 
-let a = prompt("Enter your name ");
+let a = prompt("Enter the required string ");
 
 var i = 1;
 
