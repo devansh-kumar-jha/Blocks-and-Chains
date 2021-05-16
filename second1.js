@@ -51,6 +51,8 @@ const signature = crypto.sign("sha256", Buffer.from(verifiableData), {
 
 console.log(signature.toString('hex'))
 
+fs.openSync("./Data/encrypted.txt","w");
+fs.writeFileSync("./Data/encrypted.txt",signature.toString('hex'),"utf8");
 
 const isVerified = crypto.verify(
 	"sha256",
@@ -63,4 +65,5 @@ const isVerified = crypto.verify(
 )
 
 console.log("signature verified: ", isVerified)
+
 
