@@ -1,7 +1,9 @@
 # Blocks-and-Chains
 This is a repository talking about my first project 😊 on Blocks and Chains.
-Excited to learn more about Cryptographic Hash Functions 😊😊.
+And I am excited to learn more about Cryptographic Hash Functions 😊😊.
 
-1 - Used SHA256 Hash Function.
+To see each week's assignment go in the respective folder and "help.md" file has all the instructions.
 
-2 - Implemented RSA Algorithm.
+Week 1 - Used SHA256 Hash Function.
+
+Week 2 - Implemented RSA Algorithm.
