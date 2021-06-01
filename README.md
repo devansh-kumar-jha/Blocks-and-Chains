@@ -7,3 +7,5 @@ To see each week's assignment go in the respective folder and see the instructio
 Week 1 - Used SHA256 Hash Function.
 
 Week 2 - Implemented RSA Algorithm.
+
+Week 3 - Understanding the fundamental structure of Block-chains.
