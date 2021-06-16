@@ -9,3 +9,5 @@ Week 1 - Used SHA256 Hash Function.
 Week 2 - Implemented RSA Algorithm.
 
 Week 3 - Understanding the fundamental structure of Block-chains.
+
+Week 4 - Reading a Block-Chain data from a Binary file.
