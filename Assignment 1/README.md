@@ -16,3 +16,8 @@ run sha.js -  input :
     0000380514127e83559de020c07945d266632b5bef7673c7c924d189b81db4ef
 
     299248
+
+
+### - Bit Extra Work
+Though the work is complete in sha.js file but I have made a sha_library.js file which implements the same code using the Crypto library which is a bit better implementation as the NODE JS Crypto library has a lot better optimizations in the code for implementing SHA-256 function.
+The file sha_library.js takes the same input and gives the same output as sha.js file.

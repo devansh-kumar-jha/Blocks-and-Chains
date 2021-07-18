@@ -4,7 +4,7 @@
 * Original code by Angel Marin, Paul Johnston
 **/
 
-function SHA256(s){
+function SHA256(s) {
     var chrsz = 8;
     var hexcase = 0;
    
@@ -119,7 +119,7 @@ function SHA256(s){
    
     s = Utf8Encode(s);
     return binb2hex(core_sha256(str2binb(s), s.length * chrsz));
-   }
+}
 
 const ps = require("prompt-sync");
 const prompt = ps();

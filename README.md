@@ -13,3 +13,5 @@ Week 3 - Understanding the fundamental structure of Block-chains.
 Week 4 - Reading a Block-Chain data from a Binary file.
 
 Week 5 - Representation of a Block
+
+Week 6 - Theoretical Advancement into Blocks and Chains
