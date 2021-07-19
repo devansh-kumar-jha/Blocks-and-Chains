@@ -41,36 +41,46 @@ So here is a set of simple programs which are to be run in order to get the work
 
 1) -> **Example where the signature is verified.**
 
-  run sign.js    --  input : 
+run sign.js    --  input : 
                             
-  ``` Hello world !!!  ```
-                    
-   output :
+``` 
+Hello world !!!  
+```
 
-  **(Here the output may change according to the keys available in .pem files)**                  
-  ``` 769a89bd6322a298daaf419ff7c49ef2398103e666f820c1bd308fdb6b5728cd7989073ab4e63f46e6ee1d60ac7843eb98541e0db84fde9217a4433283f77e65d16c5c1865e817fa845b07ed5d8b036bec68975506e975334a46d187b175e88b0348b0293d5e06ae39ae870c1b8e6a00bb66547c22ff38bdc318e2f688c77e0c88548c9bb833eeae37fdca495a97e929e1b36572894c2e4b0412d9c20f7f049f7adf1a4995a72a6dfa0458493169fa7f439891ba32bfb0ec19b5b5b0f1b3fb1e154f3b7876562661edf37ad1d4cae545f66bad1e25490676f4b73b61d52b59684cf57e0b51091a26ad257fef04219288e4ac68628cc3a08d9cf29994b5ff39a6 ```
- 
-  run decrypt.js -- output : 
+**(Here the output may change according to the keys available in .pem files)**      
+output : 
+
+```
+769a89bd6322a298daaf419ff7c49ef2398103e666f820c1bd308fdb6b5728cd7989073ab4e63f46e6ee1d60ac7843eb98541e0db84fde9217a4433283f77e65d16c5c1865e817fa845b07ed5d8b036bec68975506e975334a46d187b175e88b0348b0293d5e06ae39ae870c1b8e6a00bb66547c22ff38bdc318e2f688c77e0c88548c9bb833eeae37fdca495a97e929e1b36572894c2e4b0412d9c20f7f049f7adf1a4995a72a6dfa0458493169fa7f439891ba32bfb0ec19b5b5b0f1b3fb1e154f3b7876562661edf37ad1d4cae545f66bad1e25490676f4b73b61d52b59684cf57e0b51091a26ad257fef04219288e4ac68628cc3a08d9cf29994b5ff39a6
+```
+
+run decrypt.js -- output : 
                             
-  ```
-  Decrypted String : Hello World !!!
-  Signature Verified !!!
-  ```                  
+```
+Decrypted String : Hello World !!!
+Signature Verified !!!
+```                  
                             
                             
 2) -> **Where the signature fails to verify.**
 
-  run sign.js    --  input : 
+run sign.js    --  input : 
   
-  ```Hello world !!!```
+```
+Hello world !!!
+```
 
-  **(Here the output may change according to the keys available in .pem files)**                   
-   output : 
+**(Here the output may change according to the keys available in .pem files)**                   
+output : 
              
-  ```769a89bd6322a298daaf419ff7c49ef2398103e666f820c1bd308fdb6b5728cd7989073ab4e63f46e6ee1d60ac7843eb98541e0db84fde9217a4433283f77e65d16c5c1865e817fa845b07ed5d8b036bec68975506e975334a46d187b175e88b0348b0293d5e06ae39ae870c1b8e6a00bb66547c22ff38bdc318e2f688c77e0c88548c9bb833eeae37fdca495a97e929e1b36572894c2e4b0412d9c20f7f049f7adf1a4995a72a6dfa0458493169fa7f439891ba32bfb0ec19b5b5b0f1b3fb1e154f3b7876562661edf37ad1d4cae545f66bad1e25490676f4b73b61d52b59684cf57e0b51091a26ad257fef04219288e4ac68628cc3a08d9cf29994b5ff39a6```
+```
+769a89bd6322a298daaf419ff7c49ef2398103e666f820c1bd308fdb6b5728cd7989073ab4e63f46e6ee1d60ac7843eb98541e0db84fde9217a4433283f77e65d16c5c1865e817fa845b07ed5d8b036bec68975506e975334a46d187b175e88b0348b0293d5e06ae39ae870c1b8e6a00bb66547c22ff38bdc318e2f688c77e0c88548c9bb833eeae37fdca495a97e929e1b36572894c2e4b0412d9c20f7f049f7adf1a4995a72a6dfa0458493169fa7f439891ba32bfb0ec19b5b5b0f1b3fb1e154f3b7876562661edf37ad1d4cae545f66bad1e25490676f4b73b61d52b59684cf57e0b51091a26ad257fef04219288e4ac68628cc3a08d9cf29994b5ff39a6
+```
  
-  run generate.js   -- (no input or output)
+run generate.js   -- (no input or output)
  
-  run decrypt.js -- output : 
+run decrypt.js -- output : 
  
-  ```Verification Failed !!!```   
+```
+Verification Failed !!!
+```   
