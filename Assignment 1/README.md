@@ -28,16 +28,18 @@ So here is a set of simple programs which are to be run in order to get the work
 
 ### EXAMPLE
 
-    run sha.js -  input : 
+run sha.js -  input : 
 
-    ```hackeryg```
-                       
-    output:
+```
+hackeryg
+```
+
+output:
    
-    ```
-    0000380514127e83559de020c07945d266632b5bef7673c7c924d189b81db4ef
-    299248
-    ```
+```
+0000380514127e83559de020c07945d266632b5bef7673c7c924d189b81db4ef
+299248
+```
 
 
 ###  EXTRAS
