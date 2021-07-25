@@ -1,10 +1,7 @@
-const unixTime = 1210981217;
-const date = new Date(unixTime*1000);
-console.log(date.toLocaleDateString("en-US"));
+const nano = require("nano-time");
 
-let a = console.timeStamp("Hello()");
-console.log(a);
-
-if (!Date.now) {
-    Date.now = function() { return new Date().getTime(); }
-}
+let time = nano();
+console.log("Timestamp with nano-second precision - ",time);
+console.log("Length of string generated           - ",time.length);
+time = BigInt(time);
+console.log("Timestamp as a Big Integer number    - ",time);
