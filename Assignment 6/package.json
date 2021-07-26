@@ -2,14 +2,14 @@
   "name": "assignment-6",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "crypto": "^1.0.1",
-    "fs": "0.0.1-security"
+    "express": "^4.17.1",
+    "url": "^0.11.0"
   }
 }
