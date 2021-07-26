@@ -17,9 +17,10 @@ npm install
 1) - *package.json* - contains information of all Dependencies.
 2) - *package-lock.json* - used for installation of all Dependencies on remote device using npm install command .
 3) - *sample.dat* - file generated for testing of code .
+4) - *block.dat* - file used for mining of the block .
 
 ##### source codes to be run -
-4) - *mine.js* - this is the main code file which will ask for the input and give the corresponding nonce value and the timestamp as the output.
+5) - *mine.js* - this is the main code file which will ask for the input and give the corresponding nonce value and the timestamp as the output.
 
 ### EXAMPLES
 
