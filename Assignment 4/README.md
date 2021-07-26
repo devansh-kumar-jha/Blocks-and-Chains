@@ -18,9 +18,10 @@ npm install
 1) - *package.json* - contains information of all Dependencies.
 2) - *package-lock.json* - used for installation of all Dependencies on remote device using npm install command .
 3) - *default.dat* - used as a default input file in case no valid file is got from the user.
+4) - *sample.dat* - mentor's .dat file provided for testing of the code.
 
 ##### source codes to be run -
-4) - *read.js* - This is the main file in the assignment which takes the file location to input from the user and then read the data from that file.
+5) - *read.js* - This is the main file in the assignment which takes the file location to input from the user and then read the data from that file.
 
 
 ### EXAMPLES
