@@ -71,7 +71,7 @@ mwIDAQAB
 -----END PUBLIC KEY-----
 ```       
 
-        - output :
+check.js  - output :
 
 ```
 6f1f0d399cad17fc8df7bb5c01cd93f175f8b11c56392279dfb1592115466e68.dat
