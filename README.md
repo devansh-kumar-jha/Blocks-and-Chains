@@ -15,3 +15,5 @@ Week 4 - Reading a Block-Chain data from a Binary file.
 Week 5 - Representation of a Block and Block mining.
 
 Week 6 - Theoretical Advancement into Blocks and Chains and web-servers.
+
+Week 7 - Structural Details of Blocks and Chains
