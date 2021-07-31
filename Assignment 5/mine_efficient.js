@@ -14,25 +14,36 @@ let block = prompt("Enter the location of file containing body of block  ");
 
 let str = fs_temp.readFileSync(block);
 let b_hash = crypto.createHash('SHA256').update(str).digest('hex');
-let nonce = 1n;
+let nonce = 0n;
 var flag = 0;
 
 let start_time = nano();
+
+let fd_temp = fs_temp.openSync("extra.dat","w+");
+
+push_number(index,4);
+push_hash(hash);
+push_hash(b_hash);
+push_hash(tar);
+
+let str2 = fs_temp.readFileSync("extra.dat");
+
+fs_temp.close(fd_temp, (err) => {
+    if (err) {
+    console.error('Internal ERROR', err);
+    }  
+});
 
 while(flag==0) {
     let fd = fs.openSync("block.dat","w+");
 
     let timestamp = BigInt(Date.now());
     
-    push_number(index,4);
-    push_hash(hash);
-    push_hash(b_hash);
-    push_hash(tar);
     push_number(timestamp,8);
     push_number(nonce,8);
 
     let str1 = fs.readFileSync("block.dat");
-    let check_hash = crypto.createHash('SHA256').update(str1).digest('hex');
+    let check_hash = crypto.createHash('SHA256').update(str2+str1).digest('hex');
 
     if(check_hash<=tar) {
         flag=1;
@@ -86,5 +97,3 @@ function push_hash(str)
     fs.writeFileSync("block.dat", arr);
     return;
 }
-
-
