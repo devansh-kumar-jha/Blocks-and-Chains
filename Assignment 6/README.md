@@ -19,6 +19,32 @@ npm install
 3) - *hello.js* - first web server created as a practise which echo's Hello World on the screen .
 
 ##### source code files - 
-4) - *web.js* - main assignment file which creates the required web server .
+4) - *web.js* - main assignment file which creates the required web server . It uses the ExpressJS framework for the same .
+5) - *web_extra.js* - the same work is also done using standard HTTP file system available .
 
 ### EXAMPLES
+
+1) - 
+run hello.js : output on console -
+
+```
+Listening to http://localhost:8787
+So how was it? :)
+```
+run hello.js : output on webpage -
+```
+Hello World So how was it? :)
+```
+
+2) - 
+run web.js : output on console -
+
+
+run web.js : output on webpage -
+
+
+3) - 
+run web_extra.js : output on console -
+
+
+run web_extra.js : output on webpage - 

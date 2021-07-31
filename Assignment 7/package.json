@@ -1,7 +1,7 @@
 {
   "name": "assignment-7",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run the following commands on your remote device to run the code -\r ```\r git clone https://github.com/dkjha20/Blocks-and-Chains\r cd 'Assignment 7'\r npm install\r ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,11 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "all": "0.0.0",
     "crypto": "^1.0.1",
     "fs": "0.0.1-security",
     "fs-extra": "^10.0.0",
     "nano-time": "^1.0.0",
     "node-rsa": "^1.1.1",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {}
 }
