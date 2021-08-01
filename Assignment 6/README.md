@@ -11,40 +11,41 @@ cd 'Assignment 6'
 npm install
 ```
 
+Also to run the web server - 
+Download the postmaster desktop application [here](https://www.postman.com/downloads/)
+
 ### VARIOUS FILES INCLUDED
 
 ##### backend files not for user - 
 1) - *package.json* - contains information of all Dependencies .
 2) - *package-lock.json* - used for installation of all Dependencies on remote device using npm install command .
-3) - *hello.js* - first web server created as a practise which echo's Hello World on the screen .
 
 ##### source code files - 
-4) - *web.js* - main assignment file which creates the required web server . It uses the ExpressJS framework for the same .
-5) - *web_extra.js* - the same work is also done using standard HTTP file system available .
+3) - *web.js* - main assignment file which creates the required web server . It uses the ExpressJS framework for the same .
 
 ### EXAMPLES
 
-1) - 
-run hello.js : output on console -
-
-```
-Listening to http://localhost:8787
-So how was it? :)
-```
-run hello.js : output on webpage -
-```
-Hello World So how was it? :)
-```
-
-2) - 
 run web.js : output on console -
+```
+Web server is listening to http://localhost:8787/hash
+```
 
+run web.js : input on postmaster -
+```C
+http://localhost:8787/hash
+       // It is a POST request with request as below - 
+       //   {
+       //     "data" = "hello create a hash for me :)"
+       //   }
+``` 
 
-run web.js : output on webpage -
+web.js : output on console -
+```
+7a4cb0b2a09ac339c2b344c0cabcff3647735eb7003f40ea12a488ead073a98c
+```
 
-
-3) - 
-run web_extra.js : output on console -
-
-
-run web_extra.js : output on webpage - 
+### EXTRAS
+There are a lot of extra implementations executed along with the main work in this folder.
+*hello.js* is a hello world get server in ExpressJS.
+*web_extra.js* uses the "http" library instead of ExpressJS library.
+*practise.html* and *request.html* are the HTML files linked with file *web_extra.js*.
